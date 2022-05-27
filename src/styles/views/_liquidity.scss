@@ -1,0 +1,50 @@
+.liquidity-page {
+  width: max-content;
+  min-width: 35%;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  background-color: #1f2335;
+  p {
+    font-size: 1.5rem;
+    color: #a6a9b9;
+  }
+  .liquidity-msg-p {
+    width: 100%;
+    text-align: center;
+    background-color: #191d31;
+    border-radius: 1rem;
+    padding: 2.5rem 0;
+    margin: 1.75rem 0;
+  }
+  button {
+    width: 100%;
+  }
+  .liquidity-header {
+    width: 100%;
+    margin: 0 0 0.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      font-size: 2.75rem;
+      color: #fff;
+      font-weight: 600;
+    }
+    .liquidity-header-icons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      svg {
+        width: 2.5rem;
+        object-fit: contain;
+        stroke: #a6a9b9;
+        cursor: pointer;
+        margin: 0 0 0 2.5rem;
+        transition: $trns1;
+        &:hover {
+          stroke: #fff;
+        }
+      }
+    }
+  }
+}

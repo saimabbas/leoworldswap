@@ -1,0 +1,23 @@
+.btn-filled-yellow {
+  min-width: max-content;
+  border: 0;
+  background-color: #dab539;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  outline: 0;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: $trns1;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 0.8;
+    transform: scale(0.99);
+  }
+}
