@@ -6,6 +6,7 @@ header {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1;
   .header-content {
     width: 100%;
     padding: 1.5rem 2.5rem;

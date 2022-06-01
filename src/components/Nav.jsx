@@ -5,6 +5,7 @@ import MarketIcon from "../assets/Icons/MarketIcon";
 import HelpCenter from "../assets/Img/help-center-icon.png";
 
 import HeaderLogo from "../assets/Img/header-logo.png";
+import ExportIcon from "../assets/Icons/ExportIcon";
 const Nav = () => {
   return (
     <nav>
@@ -41,7 +42,10 @@ const Nav = () => {
             <img src={HelpCenter} alt="HelpCenter" />
             <h6>Help Center</h6>
             <p>Having trouble in LeoXL? Please contact us for more question.</p>
-            <button className="btn-filled-yellow">Help Center</button>
+            <button className="btn-filled-yellow">
+              {" "}
+              <ExportIcon color="#fff" /> Help Center
+            </button>
           </div>
         </div>
       </div>

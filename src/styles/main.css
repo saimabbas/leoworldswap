@@ -42,12 +42,13 @@ svg {
 }
 
 .dashboard-content-container {
-  width: 100%;
-  height: 100vh;
+  width: 85%;
+  min-height: 100vh;
   position: absolute;
   top: 7.5rem;
   left: 22.5rem;
   padding: 2.5rem;
+  background-color: #191d31;
 }
 
 header {
@@ -57,6 +58,7 @@ header {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1;
 }
 
 header .header-content {
@@ -559,6 +561,11 @@ nav .nav-content .nav-bottom .help-center-box button {
           transform: scale(0.99);
 }
 
+.btn-filled-yellow svg {
+  width: 1.75rem;
+  margin: 0 0.75rem 0 0;
+}
+
 .liquidity-page {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -632,5 +639,782 @@ nav .nav-content .nav-bottom .help-center-box button {
 
 .liquidity-page .liquidity-header .liquidity-header-icons svg:hover {
   stroke: #fff;
+}
+
+.setting-page {
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  background-color: #1f2335;
+}
+
+.setting-page .setting-header {
+  width: 100%;
+  margin: 0 0 0.75rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.setting-page .setting-header h2 {
+  font-size: 2.75rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.setting-page .setting-cross {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.35fr 0.75fr 0.85fr 1fr;
+      grid-template-columns: 0.35fr 0.75fr 0.85fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  width: 75%;
+  padding: 2rem 0 0 0;
+}
+
+.setting-page .setting-cross .setting-cross-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 2rem 0 0;
+}
+
+.setting-page .setting-cross .setting-cross-inner .setting-cross-box {
+  max-width: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  border-radius: 50%;
+  background-color: #f9857a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setting-page .setting-cross .setting-cross-inner .setting-cross-box svg {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.setting-page .setting-cross .setting-cross-inner h6 {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 0 1.5rem;
+}
+
+.setting-main-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  margin: 3rem 0 0 0;
+}
+
+.setting-main-box .setting-left {
+  width: 53%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.setting-main-box .setting-left .sleft-fa {
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  background-color: #1f2335;
+}
+
+.setting-main-box .setting-left .sleft-fa h5 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.setting-main-box .setting-left .sleft-fa .google-authentication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #2b2e41;
+}
+
+.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-left .goog-icon {
+  min-width: 4rem;
+  min-height: 4rem;
+  max-width: 4rem;
+  max-height: 4rem;
+  background-color: #2b2e41;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-left .goog-icon svg {
+  width: 2rem;
+}
+
+.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-left .goog-para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 0 0 1.5rem;
+}
+
+.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-left .goog-para h6 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+
+.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-left .goog-para p {
+  color: #a6a9b9;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 25.2px;
+  width: 75%;
+}
+
+.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-right button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11rem;
+  height: 3.5rem;
+  border-radius: 6px;
+  border: 1.5px solid #ffd33f;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffd33f;
+  background-color: transparent;
+}
+
+.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-right .verify-btn {
+  border: 1.5px solid #a6a9b9;
+  color: #a6a9b9;
+  width: 11rem;
+  height: 3.5rem;
+}
+
+.setting-main-box .setting-left .sleft-fa .email-authentication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2rem 0 0 0;
+}
+
+.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-left .goog-icon {
+  min-width: 4rem;
+  min-height: 4rem;
+  max-width: 4rem;
+  max-height: 4rem;
+  background-color: #2b2e41;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-left .goog-icon svg {
+  width: 2rem;
+}
+
+.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-left .goog-para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 0 0 1.5rem;
+}
+
+.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-left .goog-para h6 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+
+.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-left .goog-para p {
+  color: #a6a9b9;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 25.2px;
+  width: 75%;
+}
+
+.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-right button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11rem;
+  height: 3.5rem;
+  border-radius: 6px;
+  border: 1.5px solid #ffd33f;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffd33f;
+  background-color: transparent;
+}
+
+.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-right .verify-btn {
+  border: 1.5px solid #a6a9b9;
+  color: #a6a9b9;
+}
+
+.setting-main-box .setting-left .sleft-dm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  background-color: #1f2335;
+  margin: 2rem 0;
+}
+
+.setting-main-box .setting-left .sleft-dm h5 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.setting-main-box .setting-left .sleft-dm button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11rem;
+  height: 3.5rem;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1.5px solid #a6a9b9;
+  color: #a6a9b9;
+}
+
+.setting-main-box .setting-left .sleft-aa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  background-color: #1f2335;
+}
+
+.setting-main-box .setting-left .sleft-aa .sl-aa-para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.setting-main-box .setting-left .sleft-aa .sl-aa-para h5 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.setting-main-box .setting-left .sleft-aa .sl-aa-para p {
+  font-size: 1.4rem;
+  color: #a6a9b9;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.setting-main-box .setting-left .sleft-aa .sl-aa-para h6 {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.setting-main-box .setting-left .sleft-aa .sl-aa-para h6 span {
+  color: #f9857a;
+  margin: 0 0 0 0.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.setting-main-box .setting-left .sleft-aa button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11rem;
+  height: 3.5rem;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1.5px solid #a6a9b9;
+  color: #a6a9b9;
+}
+
+.setting-main-box .setting-right {
+  width: 44%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.setting-main-box .setting-right .sright-ILA {
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  background-color: #1f2335;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #2b2e41;
+  padding: 2.5rem 0;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden h5 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11rem;
+  height: 3.5rem;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1.5px solid #a6a9b9;
+  color: #a6a9b9;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #2b2e41;
+  padding: 0 0 2.5rem 0;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-2 h5 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-2 button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11rem;
+  height: 3.5rem;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1.5px solid #a6a9b9;
+  color: #a6a9b9;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2.5rem 0;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-1 .s-right-para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-1 .s-right-para h5 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-1 .s-right-para p {
+  font-size: 1.4rem;
+  color: #a6a9b9;
+  font-weight: 400;
+  line-height: 25.2px;
+  margin: 1rem 0;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-1 .s-right-para .s-right-off {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-1 .s-right-para .s-right-off span {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-1 .s-right-para .s-right-off img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1.35rem;
+}
+
+.setting-main-box .setting-right .sright-ILA .s-right-Iden-1 button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11rem;
+  height: 3.5rem;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1.5px solid #a6a9b9;
+  color: #a6a9b9;
+}
+
+.setting-main-box .setting-right .sright-apc {
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  background-color: #1f2335;
+  margin: 2.5rem 0;
+}
+
+.setting-main-box .setting-right .sright-apc .s-right-Iden-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2.5rem 0;
+}
+
+.setting-main-box .setting-right .sright-apc .s-right-Iden-3 .s-right-para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.setting-main-box .setting-right .sright-apc .s-right-Iden-3 .s-right-para h5 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.setting-main-box .setting-right .sright-apc .s-right-Iden-3 .s-right-para p {
+  font-size: 1.4rem;
+  color: #a6a9b9;
+  font-weight: 400;
+  line-height: 25.2px;
+  margin: 1rem 0;
+  width: 75%;
+}
+
+.setting-main-box .setting-right .sright-apc .s-right-Iden-3 .s-right-para .s-right-off {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setting-main-box .setting-right .sright-apc .s-right-Iden-3 .s-right-para .s-right-off span {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.setting-main-box .setting-right .sright-apc .s-right-Iden-3 .s-right-para .s-right-off img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1.35rem;
+}
+
+.setting-main-box .setting-right .sright-apc .s-right-Iden-3 button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11rem;
+  height: 3.5rem;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1.5px solid #ffd33f;
+  color: #ffd33f;
 }
 /*# sourceMappingURL=main.css.map */
