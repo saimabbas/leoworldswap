@@ -1,0 +1,199 @@
+.deposit-page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  h5 {
+    font-size: 2.8rem;
+    color: #fff;
+    font-weight: 600;
+  }
+  .Deposit-main-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #1f2335;
+    padding: 3rem;
+    margin: 2rem 0 !important;
+    .dmainleft {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 45%;
+      label {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #fff;
+        margin: 0 0 1.25rem 0;
+      }
+      select {
+        width: 100%;
+        background-color: #191d31;
+        border-radius: 12px;
+        padding: 1rem;
+        margin: 0 0 1.75rem 0;
+        border: unset;
+        color: #fff;
+        .Optioncontent {
+          .td-name-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1.5rem;
+            min-width: 1.5rem;
+            max-height: 1.5rem;
+            min-height: 1.5rem;
+            background-color: #ff9f38;
+            border-radius: 50%;
+            margin: 0 0.5rem 0 0;
+            svg {
+              width: 1rem;
+            }
+          }
+          .td-name-icon-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1.5rem;
+            min-width: 1.5rem;
+            max-height: 1.5rem;
+            min-height: 1.5rem;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 1.5px solid #fff;
+            margin: 0 0.5rem 0 0;
+            svg {
+              width: 1rem;
+            }
+          }
+          h6 {
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 400;
+          }
+          p {
+            margin: 0 0 0 0.35rem;
+            font-size: 1.4rem;
+            color: #a6a9b9;
+            font-weight: 400;
+          }
+        }
+      }
+      .dmainlpara {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0 0 1rem 0;
+        h6 {
+          font-size: 1.4rem;
+          color: #a6a9b9;
+          font-weight: 400;
+        }
+        h4 {
+          font-size: 1.4rem;
+          color: #fff;
+          font-weight: 500;
+        }
+      }
+      .dmainlyellow {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(252, 172, 86, 0.1);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        svg {
+          width: 4rem;
+          height: 2rem;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: #fcac56;
+          margin: 0 0 0 1rem;
+          line-height: 25.2px;
+        }
+      }
+      .dmainlbtn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        button {
+          margin: 0 0 0 2rem;
+          padding: 1.15rem 3rem;
+        }
+      }
+    }
+    .dmainright {
+      border: 1px solid #2b2e41;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 3rem;
+      width: 34%;
+      img {
+        width: 31rem;
+        height: 30rem;
+      }
+      p {
+        line-height: 25.2px;
+        color: #a6a9b9;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin: 1rem 0 0 0;
+        text-align: center;
+      }
+    }
+  }
+  .DepositHistoryTable {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 3rem 0 0 0;
+    .DHTabbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 0 0 2rem 0;
+      h6 {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 600;
+        width: 30%;
+      }
+      .DHTRight {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        p {
+          font-size: 1.4rem;
+          color: #ffd33f;
+          font-weight: 500;
+          margin: 0 0 0 3rem;
+        }
+      }
+    }
+    .assets-table-content {
+      width: 100%;
+    }
+    .Deposit-table-box {
+      width: 100%;
+      background-color: #1f2335;
+      border-radius: 15px;
+      padding: 3rem;
+    }
+  }
+}

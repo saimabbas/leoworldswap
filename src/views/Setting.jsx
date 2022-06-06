@@ -60,7 +60,7 @@ const Setting = () => {
                     </div>
                   </div>
                   <div className="goog-auth-right">
-                    <button className="enable-btn">Enable</button>
+                    <button className="btn-outlined-yellow">Enable</button>
                   </div>
                 </div>
                 <div className="google-authentication">
@@ -74,7 +74,7 @@ const Setting = () => {
                     </div>
                   </div>
                   <div className="goog-auth-right">
-                    <button className="enable-btn">Enable</button>
+                    <button className="btn-outlined-yellow">Enable</button>
                   </div>
                 </div>
                 <div className="email-authentication">
@@ -88,13 +88,13 @@ const Setting = () => {
                     </div>
                   </div>
                   <div className="goog-auth-right">
-                    <button className="verify-btn">Verify</button>
+                    <button className="btn-outlined-gray">Verify</button>
                   </div>
                 </div>
               </div>
               <div className="sleft-dm">
                 <h5>Device Management</h5>
-                <button className="verify-btn">Manage</button>
+                <button className="btn-outlined-gray">Manage</button>
               </div>
               <div className="sleft-aa">
                 <div className="sl-aa-para">
@@ -104,18 +104,18 @@ const Setting = () => {
                     Suspicius account activity? <span>Deactive Account</span>
                   </h6>
                 </div>
-                <button className="verify-btn">More</button>
+                <button className="btn-outlined-gray">More</button>
               </div>
             </div>
             <div className="setting-right">
               <div className="sright-ILA">
                 <div className="s-right-Iden-2">
                   <h5>Identify Verification</h5>
-                  <button className="verify-btn">Verify</button>
+                  <button className="btn-outlined-gray">Verify</button>
                 </div>
                 <div className="s-right-Iden">
                   <h5>Login Password</h5>
-                  <button className="verify-btn">Reset</button>
+                  <button className="btn-outlined-gray">Reset</button>
                 </div>
                 <div className="s-right-Iden-1">
                   <div className="s-right-para">
@@ -129,7 +129,7 @@ const Setting = () => {
                       <img src={InfoImg} alt="InfoImg" />
                     </div>
                   </div>
-                  <button className="verify-btn">Manage</button>
+                  <button className="btn-outlined-gray">Manage</button>
                 </div>
               </div>
               <div className="sright-apc">
@@ -142,7 +142,7 @@ const Setting = () => {
                       Tokocrypto or phishing attempts
                     </p>
                   </div>
-                  <button className="enable-btn">Enable</button>
+                  <button className="btn-outlined-yellow">Enable</button>
                 </div>
               </div>
             </div>

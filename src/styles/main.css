@@ -536,7 +536,8 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-weight: 500;
   border-radius: 0.75rem;
   outline: 0;
-  padding: 1rem 1.5rem;
+  min-width: 11rem;
+  min-height: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,18 +553,218 @@ nav .nav-content .nav-bottom .help-center-box button {
 }
 
 .btn-filled-yellow:hover {
-  opacity: 0.9;
+  background-color: rgba(255, 210, 63, 0.85);
 }
 
 .btn-filled-yellow:active {
-  opacity: 0.8;
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
+  background-color: rgba(255, 210, 63, 0.9);
 }
 
 .btn-filled-yellow svg {
   width: 1.75rem;
   margin: 0 0.75rem 0 0;
+}
+
+.btn-outlined-gray-icon {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  border: 0;
+  background-color: transparent;
+  border: 1.5px solid #a6a9b9;
+  color: #a6a9b9;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  outline: 0;
+  min-width: 11rem;
+  min-height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.btn-outlined-gray-icon:hover {
+  background-color: rgba(166, 169, 185, 0.05);
+}
+
+.btn-outlined-gray-icon:active {
+  background-color: rgba(166, 169, 185, 0.1);
+}
+
+.btn-outlined-gray-icon svg {
+  width: 1.75rem;
+  margin: 0 0.75rem 0 0;
+}
+
+.btn-outlined-yellow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 11rem;
+  min-height: 3.5rem;
+  border-radius: 6px;
+  border: 1.5px solid #ffd33f;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffd33f;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-outlined-yellow:hover {
+  background-color: rgba(255, 210, 63, 0.05);
+}
+
+.btn-outlined-yellow:active {
+  background-color: rgba(255, 210, 63, 0.1);
+}
+
+.btn-outlined-gray {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 11rem;
+  min-height: 3.5rem;
+  border-radius: 6px;
+  border: 1.5px solid #a6a9b9;
+  color: #a6a9b9;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-outlined-gray:hover {
+  opacity: 0.9;
+  background-color: rgba(166, 169, 185, 0.05);
+}
+
+.btn-outlined-gray:active {
+  background-color: rgba(166, 169, 185, 0.1);
+}
+
+.market-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding: 2.5rem 0 0 0;
+}
+
+.market-page h5 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.market-page .MarketPageButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 2.5rem 0 0 0;
+}
+
+.market-page .MarketPageButtons .MarkerbtnLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.market-page .MarketPageButtons .MarkerbtnLeft a {
+  font-size: 1.4rem;
+  color: #a6a9b9;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 1rem 2.5rem;
+  border-radius: 1000px;
+  margin: 0 2rem 0 0;
+}
+
+.market-page .MarketPageButtons .MarkerbtnLeft a:hover {
+  background-color: rgba(71, 99, 240, 0.15);
+  color: #dab539;
+}
+
+.market-page .MarketPageButtons .MarketbtnRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.market-page .MarketPageButtons .MarketbtnRight select {
+  border-radius: 12px;
+  border: 1.5px solid #a6a9b9;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.4rem;
+  color: #a6a9b9;
+  font-weight: 500;
+}
+
+.market-page button {
+  margin: 2.5rem auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12%;
 }
 
 .liquidity-page {
@@ -860,33 +1061,6 @@ nav .nav-content .nav-bottom .help-center-box button {
           align-items: center;
 }
 
-.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-right button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 11rem;
-  height: 3.5rem;
-  border-radius: 6px;
-  border: 1.5px solid #ffd33f;
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #ffd33f;
-  background-color: transparent;
-}
-
-.setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-right .verify-btn {
-  border: 1.5px solid #a6a9b9;
-  color: #a6a9b9;
-  width: 11rem;
-  height: 3.5rem;
-}
-
 .setting-main-box .setting-left .sleft-fa .email-authentication {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -979,31 +1153,6 @@ nav .nav-content .nav-bottom .help-center-box button {
           align-items: center;
 }
 
-.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-right button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 11rem;
-  height: 3.5rem;
-  border-radius: 6px;
-  border: 1.5px solid #ffd33f;
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #ffd33f;
-  background-color: transparent;
-}
-
-.setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-right .verify-btn {
-  border: 1.5px solid #a6a9b9;
-  color: #a6a9b9;
-}
-
 .setting-main-box .setting-left .sleft-dm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1025,26 +1174,6 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.8rem;
   color: #fff;
   font-weight: 600;
-}
-
-.setting-main-box .setting-left .sleft-dm button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 11rem;
-  height: 3.5rem;
-  border-radius: 6px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  background-color: transparent;
-  border: 1.5px solid #a6a9b9;
-  color: #a6a9b9;
 }
 
 .setting-main-box .setting-left .sleft-aa {
@@ -1105,26 +1234,6 @@ nav .nav-content .nav-bottom .help-center-box button {
   cursor: pointer;
 }
 
-.setting-main-box .setting-left .sleft-aa button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 11rem;
-  height: 3.5rem;
-  border-radius: 6px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  background-color: transparent;
-  border: 1.5px solid #a6a9b9;
-  color: #a6a9b9;
-}
-
 .setting-main-box .setting-right {
   width: 44%;
   display: -webkit-box;
@@ -1170,26 +1279,6 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-weight: 600;
 }
 
-.setting-main-box .setting-right .sright-ILA .s-right-Iden button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 11rem;
-  height: 3.5rem;
-  border-radius: 6px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  background-color: transparent;
-  border: 1.5px solid #a6a9b9;
-  color: #a6a9b9;
-}
-
 .setting-main-box .setting-right .sright-ILA .s-right-Iden-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1209,26 +1298,6 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.8rem;
   color: #fff;
   font-weight: 600;
-}
-
-.setting-main-box .setting-right .sright-ILA .s-right-Iden-2 button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 11rem;
-  height: 3.5rem;
-  border-radius: 6px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  background-color: transparent;
-  border: 1.5px solid #a6a9b9;
-  color: #a6a9b9;
 }
 
 .setting-main-box .setting-right .sright-ILA .s-right-Iden-1 {
@@ -1298,26 +1367,6 @@ nav .nav-content .nav-bottom .help-center-box button {
   width: 2rem;
   height: 2rem;
   margin: 0 1.35rem;
-}
-
-.setting-main-box .setting-right .sright-ILA .s-right-Iden-1 button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 11rem;
-  height: 3.5rem;
-  border-radius: 6px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  background-color: transparent;
-  border: 1.5px solid #a6a9b9;
-  color: #a6a9b9;
 }
 
 .setting-main-box .setting-right .sright-apc {
@@ -1398,7 +1447,325 @@ nav .nav-content .nav-bottom .help-center-box button {
   margin: 0 1.35rem;
 }
 
-.setting-main-box .setting-right .sright-apc .s-right-Iden-3 button {
+.assets-page {
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  background-color: #1f2335;
+}
+
+.assets-page .assets-total-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 0 3rem 0;
+}
+
+.assets-page .assets-total-box .assets-tot-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.assets-page .assets-total-box .assets-tot-left span {
+  font-size: 1.6rem;
+  color: #a6a9b9;
+  font-weight: 400;
+}
+
+.assets-page .assets-total-box .assets-tot-left h6 {
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: 600;
+  margin: 0.5rem 0 0 0;
+}
+
+.assets-page .assets-total-box .assets-tot-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.assets-page .assets-total-box .assets-tot-btn button {
+  margin: 0 0 0 1.5rem;
+}
+
+.assets-page .assets-exc-bal-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-left .a-exc-box {
+  border: 1.5px solid #2b2e41;
+  border-radius: 15px;
+  padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 1.5rem 0 0;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-left .a-exc-box .assets-orange {
+  background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  border: 6.25px solid #fcac56;
+  border-radius: 50%;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-left .a-exc-box .assets-blue {
+  background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  border: 6.25px solid #4762f0;
+  border-radius: 50%;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-left .a-exc-box .a-exc-para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 0 0 1rem;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-left .a-exc-box .a-exc-para span {
+  color: #a6a9b9;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-left .a-exc-box .a-exc-para h6 {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 600;
+  margin: 0.25rem 0;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-left .a-exc-box .a-exc-para p {
+  color: #26b194;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-right .a-exc-right-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 1.75rem 0;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-right .a-exc-right-top .a-right-top-para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 0 0.5rem 0;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-right .a-exc-right-top .a-right-top-para span {
+  font-size: 1.4rem;
+  color: #a6a9b9;
+  font-weight: 400;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-right .a-exc-right-top .a-right-top-para h6 {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-right .a-exc-right-top .a-right-top-y-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #2b2e41;
+  height: 1.15rem;
+  border-radius: 6px;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-right .a-exc-right-top .a-right-top-y-line .y-inner-l {
+  width: 40%;
+  background-color: #fcac56;
+  border-radius: 6px;
+  height: 100%;
+}
+
+.assets-page .assets-exc-bal-box .a-exc-bal-right .a-exc-right-top .a-right-top-y-line .b-inner-l {
+  width: 70%;
+  background-color: #4762f0;
+  border-radius: 6px;
+  height: 100%;
+}
+
+.assets-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin: 3rem 0 0 0;
+}
+
+.assets-table h5 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.assets-main-table {
+  width: 100%;
+  margin: 2.5rem 0 0 0;
+  background-color: #1f2335;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.assets-table-content {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.assets-table-content tr th {
+  font-size: 1.2rem;
+  color: #a6a9b9;
+  padding: 2.75rem 1rem 2.75rem 0;
+  font-weight: 500;
+  text-align: left;
+}
+
+.assets-table-content .table-border-box {
+  width: 100%;
+  border-top: 1.5pt solid #2b2e41 !important;
+}
+
+.assets-table-content .table-border-box td {
+  font-size: 1.4rem;
+  color: #a6a9b9;
+  font-weight: 400;
+  padding: 2rem 0;
+}
+
+.assets-table-content .table-border-box td .td-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1408,13 +1775,487 @@ nav .nav-content .nav-bottom .help-center-box button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 11rem;
-  height: 3.5rem;
-  border-radius: 6px;
+  max-width: 3.5rem;
+  min-width: 3.5rem;
+  max-height: 3.5rem;
+  min-height: 3.5rem;
+  background-color: #ff9f38;
+  border-radius: 50%;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon svg {
+  width: 2rem;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-1 {
+  background-color: #627eea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 3.5rem;
+  min-width: 3.5rem;
+  max-height: 3.5rem;
+  min-height: 3.5rem;
+  border-radius: 50%;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-1 svg {
+  width: 2rem;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-2 {
+  background-color: #002352;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 3.5rem;
+  min-width: 3.5rem;
+  max-height: 3.5rem;
+  min-height: 3.5rem;
+  border-radius: 50%;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-2 svg {
+  width: 2rem;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-3 {
+  background-color: #2e664c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 3.5rem;
+  min-width: 3.5rem;
+  max-height: 3.5rem;
+  min-height: 3.5rem;
+  border-radius: 50%;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-3 svg {
+  width: 2rem;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-4 {
+  background-color: #00a478;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 3.5rem;
+  min-width: 3.5rem;
+  max-height: 3.5rem;
+  min-height: 3.5rem;
+  border-radius: 50%;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-4 svg {
+  width: 2rem;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-5 {
+  background-color: #662d91;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 3.5rem;
+  min-width: 3.5rem;
+  max-height: 3.5rem;
+  min-height: 3.5rem;
+  border-radius: 50%;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-5 svg {
+  width: 2rem;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-6 {
+  background-color: #22417d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 3.5rem;
+  min-width: 3.5rem;
+  max-height: 3.5rem;
+  min-height: 3.5rem;
+  border-radius: 50%;
+}
+
+.assets-table-content .table-border-box td .td-name .td-name-icon-6 svg {
+  width: 2rem;
+}
+
+.assets-table-content .table-border-box td .td-name h6 {
   font-size: 1.4rem;
   font-weight: 500;
+  color: #fff;
+  margin: 0 0 0 1.25rem;
+}
+
+.assets-table-content .table-border-box td .td-name h6 span {
+  font-weight: 400;
+  color: #a6a9b9;
+  padding: 0 0 0 0.5rem;
+}
+
+.assets-table-content .table-border-box td .total-balance-td p {
+  color: #fff;
+}
+
+.assets-table-content .table-border-box td .two-four-td p {
+  color: #26b194;
+}
+
+.assets-table-content .table-border-box td .two-four-td-1 p {
+  color: #ff6651;
+}
+
+.assets-table-content .table-border-box td .two-four-td-y p {
+  color: #fcac56;
+}
+
+.deposit-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.deposit-page h5 {
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.deposit-page .Deposit-main-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #1f2335;
+  padding: 3rem;
+  margin: 2rem 0 !important;
+}
+
+.deposit-page .Deposit-main-box .dmainleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+}
+
+.deposit-page .Deposit-main-box .dmainleft label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 1.25rem 0;
+}
+
+.deposit-page .Deposit-main-box .dmainleft select {
+  width: 100%;
+  background-color: #191d31;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 0 0 1.75rem 0;
+  border: unset;
+  color: #fff;
+}
+
+.deposit-page .Deposit-main-box .dmainleft select .Optioncontent .td-name-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1.5rem;
+  min-width: 1.5rem;
+  max-height: 1.5rem;
+  min-height: 1.5rem;
+  background-color: #ff9f38;
+  border-radius: 50%;
+  margin: 0 0.5rem 0 0;
+}
+
+.deposit-page .Deposit-main-box .dmainleft select .Optioncontent .td-name-icon svg {
+  width: 1rem;
+}
+
+.deposit-page .Deposit-main-box .dmainleft select .Optioncontent .td-name-icon-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1.5rem;
+  min-width: 1.5rem;
+  max-height: 1.5rem;
+  min-height: 1.5rem;
   background-color: transparent;
-  border: 1.5px solid #ffd33f;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+  margin: 0 0.5rem 0 0;
+}
+
+.deposit-page .Deposit-main-box .dmainleft select .Optioncontent .td-name-icon-1 svg {
+  width: 1rem;
+}
+
+.deposit-page .Deposit-main-box .dmainleft select .Optioncontent h6 {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.deposit-page .Deposit-main-box .dmainleft select .Optioncontent p {
+  margin: 0 0 0 0.35rem;
+  font-size: 1.4rem;
+  color: #a6a9b9;
+  font-weight: 400;
+}
+
+.deposit-page .Deposit-main-box .dmainleft .dmainlpara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.deposit-page .Deposit-main-box .dmainleft .dmainlpara h6 {
+  font-size: 1.4rem;
+  color: #a6a9b9;
+  font-weight: 400;
+}
+
+.deposit-page .Deposit-main-box .dmainleft .dmainlpara h4 {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.deposit-page .Deposit-main-box .dmainleft .dmainlyellow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: rgba(252, 172, 86, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.deposit-page .Deposit-main-box .dmainleft .dmainlyellow svg {
+  width: 4rem;
+  height: 2rem;
+}
+
+.deposit-page .Deposit-main-box .dmainleft .dmainlyellow p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fcac56;
+  margin: 0 0 0 1rem;
+  line-height: 25.2px;
+}
+
+.deposit-page .Deposit-main-box .dmainleft .dmainlbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.deposit-page .Deposit-main-box .dmainleft .dmainlbtn button {
+  margin: 0 0 0 2rem;
+  padding: 1.15rem 3rem;
+}
+
+.deposit-page .Deposit-main-box .dmainright {
+  border: 1px solid #2b2e41;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 3rem;
+  width: 34%;
+}
+
+.deposit-page .Deposit-main-box .dmainright img {
+  width: 31rem;
+  height: 30rem;
+}
+
+.deposit-page .Deposit-main-box .dmainright p {
+  line-height: 25.2px;
+  color: #a6a9b9;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 1rem 0 0 0;
+  text-align: center;
+}
+
+.deposit-page .DepositHistoryTable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin: 3rem 0 0 0;
+}
+
+.deposit-page .DepositHistoryTable .DHTabbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+.deposit-page .DepositHistoryTable .DHTabbox h6 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  width: 30%;
+}
+
+.deposit-page .DepositHistoryTable .DHTabbox .DHTRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deposit-page .DepositHistoryTable .DHTabbox .DHTRight p {
+  font-size: 1.4rem;
   color: #ffd33f;
+  font-weight: 500;
+  margin: 0 0 0 3rem;
+}
+
+.deposit-page .DepositHistoryTable .assets-table-content {
+  width: 100%;
+}
+
+.deposit-page .DepositHistoryTable .Deposit-table-box {
+  width: 100%;
+  background-color: #1f2335;
+  border-radius: 15px;
+  padding: 3rem;
 }
 /*# sourceMappingURL=main.css.map */

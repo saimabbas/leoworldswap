@@ -1,0 +1,60 @@
+.market-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2.5rem 0 0 0;
+  h5 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+  }
+  .MarketPageButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 2.5rem 0 0 0;
+    .MarkerbtnLeft {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 50%;
+      a {
+        font-size: 1.4rem;
+        color: #a6a9b9;
+        font-weight: 500;
+        background-color: transparent;
+        padding: 1rem 2.5rem;
+        border-radius: 1000px;
+        margin: 0 2rem 0 0;
+        &:hover {
+          background-color: rgba(71, 99, 240, 0.15);
+          color: #dab539;
+        }
+      }
+    }
+    .MarketbtnRight {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      select {
+        border-radius: 12px;
+        border: 1.5px solid #a6a9b9;
+        background-color: transparent;
+        padding: 1rem 1.5rem;
+        font-size: 1.4rem;
+        color: #a6a9b9;
+        font-weight: 500;
+      }
+    }
+  }
+  button {
+    margin: 2.5rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+  }
+}

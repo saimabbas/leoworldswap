@@ -1,4 +1,6 @@
 import React from "react";
+import ImportIcon from "../assets/Icons/ImportIcon";
+import ExportIcon from "../assets/Icons/ExportIcon";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import { Table } from "react-bootstrap";
@@ -8,32 +10,72 @@ import POT from "../assets/Icons/POT";
 import DGB from "../assets/Icons/DGB";
 import USDT from "../assets/Icons/USDT";
 import DCR from "../assets/Icons/DCR";
-import DCRB from "../assets/Icons/DCRB";
 
-const Market = () => {
+const Assets = () => {
   return (
     <div className="app">
       <div className="dashboard-container">
         <Header />
         <Nav />
         <div className="dashboard-content-container">
-          <div className="market-page">
-            <h5>Today Top Market</h5>
-            <div className="MarketPageButtons">
-              <div className="MarkerbtnLeft">
-                <a href="#">Gainers</a>
-                <a href="#">Lossers</a>
-                <a href="#">24h Vol</a>
+          <div className="assets-page">
+            <div className="assets-total-box">
+              <div className="assets-tot-left">
+                <span>Total Balance</span>
+                <h6>$372,825.32 USD</h6>
               </div>
-              <div className="MarketbtnRight">
-                <select name="market" id="market">
-                  <option value="all">All Market</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-                </select>
+              <div className="assets-tot-btn">
+                <button className="btn-filled-yellow">
+                  <ExportIcon color="#fff" /> Withdraw
+                </button>
+                <button className="btn-outlined-gray-icon">
+                  <ImportIcon color="#A6A9B9" /> Deposit
+                </button>
               </div>
             </div>
+            <div className="assets-exc-bal-box">
+              <div className="a-exc-bal-left">
+                <div className="a-exc-box">
+                  <div className="assets-orange"></div>
+                  <div className="a-exc-para">
+                    <span>Exchange Balance</span>
+                    <h6>0.23843481 BTC</h6>
+                    <p>$243,325,231.032</p>
+                  </div>
+                </div>
+                <div className="a-exc-box">
+                  <div className="assets-blue"></div>
+                  <div className="a-exc-para">
+                    <span>Asset Balance</span>
+                    <h6>0.3283235 BTC</h6>
+                    <p>$124,572,231.032</p>
+                  </div>
+                </div>
+              </div>
+              <div className="a-exc-bal-right">
+                <div className="a-exc-right-top">
+                  <div className="a-right-top-para">
+                    <span>Balance Exchanged</span>
+                    <h6>0.3098231 BTC</h6>
+                  </div>
+                  <div className="a-right-top-y-line">
+                    <div className="y-inner-l"></div>
+                  </div>
+                </div>
+                <div className="a-exc-right-top">
+                  <div className="a-right-top-para">
+                    <span>Asset Balance</span>
+                    <h6>0.000271 BTC</h6>
+                  </div>
+                  <div className="a-right-top-y-line">
+                    <div className="b-inner-l"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="assets-table">
+            <h5>Asset Balances</h5>
             <div className="assets-main-table">
               <div>
                 <Table responsive="sm" className="assets-table-content">
@@ -326,57 +368,10 @@ const Market = () => {
                         </div>
                       </td>
                     </tr>
-                    <tr className="table-border-box">
-                      <td>7</td>
-                      <td>
-                        <div className="td-name">
-                          <div className="td-name-icon-6">
-                            <DCRB />
-                          </div>
-                          <h6>
-                            Decred <span>DCR</span>
-                          </h6>
-                        </div>
-                      </td>
-                      <td>
-                        <div className="total-balance-td">
-                          <p>482.21</p>
-                        </div>
-                      </td>
-                      <td>
-                        <div className="two-four-td">
-                          <p>+46,12%</p>
-                        </div>
-                      </td>
-                      <td>
-                        <div className="two-four-td">
-                          <p>+46,12%</p>
-                        </div>
-                      </td>
-                      <td>
-                        {" "}
-                        <div className="total-balance-td">
-                          <p>$2,520.23</p>
-                        </div>
-                      </td>
-                      <td>
-                        {" "}
-                        <div className="total-balance-td">
-                          <p>$284.12</p>
-                        </div>
-                      </td>
-                      <td>
-                        {" "}
-                        <div className="total-balance-td">
-                          <p>$8.323.852</p>
-                        </div>
-                      </td>
-                    </tr>
                   </tbody>
                 </Table>
               </div>
             </div>
-            <button className="btn-filled-yellow">Load More</button>
           </div>
         </div>
       </div>
@@ -384,4 +379,4 @@ const Market = () => {
   );
 };
 
-export default Market;
+export default Assets;
