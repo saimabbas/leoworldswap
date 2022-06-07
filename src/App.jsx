@@ -1,4 +1,4 @@
-import AppPage from "./views/Deposit";
+import AppPage from "./views/Loading";
 import "./styles/main.css";
 function App() {
   return <AppPage />;
