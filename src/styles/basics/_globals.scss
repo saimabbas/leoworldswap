@@ -44,3 +44,27 @@ svg {
   padding: 2.5rem;
   background-color: #191d31;
 }
+
+.links-page {
+  width: 100%;
+  height: 100vh;
+  padding: 5rem;
+  font-size: 1.75rem;
+  background-color: #1f2335;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    margin: 0 0 0.75rem 0;
+
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -51,6 +51,35 @@ svg {
   background-color: #191d31;
 }
 
+.links-page {
+  width: 100%;
+  height: 100vh;
+  padding: 5rem;
+  font-size: 1.75rem;
+  background-color: #1f2335;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.links-page a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  margin: 0 0 0.75rem 0;
+}
+
+.links-page a:hover span {
+  text-decoration: underline;
+}
+
 header {
   width: calc(100% - 22.5rem);
   height: 7.5rem;
