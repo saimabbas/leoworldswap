@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background-image: url(/src/assets/Img/bg-signin.png);
   .sign-in-content {
     display: flex;
     justify-content: flex-start;
@@ -18,14 +19,41 @@
       font-size: 2.6rem;
       color: #fff;
       font-weight: 500;
-      margin: 0 0 5rem 0;
+      margin: 0 0 4rem 0;
+    }
+    .sign-in-flabel {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+      input {
+        background-color: #191b20;
+        border-radius: 12px;
+        border: 2px solid transparent;
+        padding: 2rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin: 0 0 2rem 0;
+        width: 100%;
+        &::placeholder {
+          font-size: 1rem;
+          color: #808191;
+          font-weight: 700;
+        }
+        &:focus {
+          border: 2px solid #dab539;
+          background-color: #242731;
+        }
+      }
     }
     .sign-in-link {
       display: flex;
       justify-content: flex-end;
       align-items: center;
       width: 100%;
-      margin: 0 0 3rem 0 !important;
+      margin: 0 0 2.5rem 0 !important;
       h6 {
         font-size: 1.3rem;
         color: #dab539;
@@ -40,7 +68,7 @@
     .btn-filled-yellow {
       width: 100%;
       padding: 1rem;
-      margin: 4rem 0 1.5rem 0;
+      margin: 3rem 0 1.5rem 0;
     }
     .sign-in-last {
       display: flex;

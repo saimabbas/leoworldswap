@@ -9,20 +9,10 @@ const SignIn = () => {
       <div className="sign-inpage">
         <div className="sign-in-content">
           <h3>Sign in to LeoWorldSwap</h3>
-          {/* <div className="sign-in-flabel">
-            <>
-              <FloatingLabel
-                controlId="floatingInput"
-                label="EMAIL"
-                className="mb-3"
-              >
-                <Form.Control type="email" placeholder="admin@gmail.com" />
-              </FloatingLabel>
-              <FloatingLabel controlId="floatingPassword" label="PASSWORd">
-                <Form.Control type="password" placeholder="Password" />
-              </FloatingLabel>
-            </>
-          </div> */}
+          <div className="sign-in-flabel">
+            <input type="text" placeholder="EMAIL" />
+            <input type="password" placeholder="PASSWORD" />
+          </div>
           <div className="sign-in-link">
             <HyperLink />
             <h6>Forgot Password?</h6>
