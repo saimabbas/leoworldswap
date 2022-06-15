@@ -2722,11 +2722,13 @@ nav .nav-content .nav-bottom .help-center-box button {
           align-items: center;
   width: 100%;
   margin: 0 0 2.5rem 0 !important;
+  cursor: pointer;
 }
 
 .sign-inpage .sign-in-content .sign-in-link h6 {
   font-size: 1.3rem;
   color: #dab539;
+  cursor: pointer;
   font-weight: 600;
   margin: 0 0 0 1rem;
 }
@@ -2760,6 +2762,7 @@ nav .nav-content .nav-bottom .help-center-box button {
   color: #fff;
   font-weight: 600;
   width: 30%;
+  cursor: pointer;
 }
 
 .sign-inpage .sign-in-content .sign-in-last .sign-in-link {

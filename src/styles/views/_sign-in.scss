@@ -54,9 +54,11 @@
       align-items: center;
       width: 100%;
       margin: 0 0 2.5rem 0 !important;
+      cursor: pointer;
       h6 {
         font-size: 1.3rem;
         color: #dab539;
+        cursor: pointer;
         font-weight: 600;
         margin: 0 0 0 1rem;
       }
@@ -80,6 +82,7 @@
         color: #fff;
         font-weight: 600;
         width: 30%;
+        cursor: pointer;
       }
       .sign-in-link {
         display: flex;
