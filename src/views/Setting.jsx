@@ -15,7 +15,7 @@ import SunIcon from "../assets/Icons/SunIcon";
 import UserProfileImg from "../assets/Img/user-profile.png";
 import HeaderLogo from "../assets/Img/header-logo.png";
 import HeaderLogoDark from "../assets/Img/header-logo-dark.png";
-
+import { Form } from "react-bootstrap";
 const Setting = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
   const changeToLightTheme = () => {
@@ -227,7 +227,7 @@ const Setting = () => {
                 </div>
                 <div className="s-right-Iden-1">
                   <div className="s-right-para">
-                    <h5>Login Password</h5>
+                    <h5>Address Management</h5>
                     <p>
                       Address Management allows you to save and write memos for
                       each of your withdrawal addresses.
@@ -235,6 +235,7 @@ const Setting = () => {
                     <div className="s-right-off">
                       <span>Witelist Off</span>
                       <img src={InfoImg} alt="InfoImg" />
+                      <Form.Check type="switch" id="custom-switch" />
                     </div>
                   </div>
                   <button className="btn-outlined-gray">Manage</button>
