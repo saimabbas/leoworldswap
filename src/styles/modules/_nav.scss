@@ -1,7 +1,7 @@
 nav {
   width: 22.5rem;
   height: 100%;
-  background-color: #1f2335;
+  background-color: var(--bg-main-2);
   // background-color: red;
   position: fixed;
   top: 0;
@@ -85,7 +85,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: var(--white10P-black10P);
         padding: 1.5rem;
         border-radius: 1rem;
         text-align: center;
@@ -101,7 +101,7 @@ nav {
         h6 {
           font-size: 1.75rem;
           font-weight: 600;
-          color: #fff;
+          color: var(--fff-000);
           margin: 2rem 0 0 0;
         }
         p {
@@ -115,5 +115,60 @@ nav {
         }
       }
     }
+  }
+}
+.nav-mob {
+  width: 100%;
+  height: 5.5rem;
+  padding: 0 2rem;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    width: 4rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid transparent;
+    svg {
+      width: 2.25rem;
+    }
+  }
+  a.active-nav-link {
+    border-top: 3px solid #dab539;
+  }
+  .mob-profile-dropup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    svg {
+      width: 1.25rem;
+      margin: 0 0 0 0.5rem;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  nav {
+    width: 100%;
+    height: unset;
+    background-color: var(--bg-main-2);
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    top: unset;
+    z-index: 10000;
+    .nav-content {
+      display: none;
+    }
+  }
+  .nav-mob {
+    display: flex;
   }
 }

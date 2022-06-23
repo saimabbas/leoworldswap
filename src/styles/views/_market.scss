@@ -4,10 +4,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  padding: 2.5rem 0 0 0;
+  // padding: 2.5rem 0 0 0;
   h5 {
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--fff-000);
     font-weight: 600;
   }
   .MarketPageButtons {
@@ -20,7 +20,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      width: 50%;
+      flex-wrap: wrap;
       a {
         font-size: 1.4rem;
         color: #a6a9b9;
@@ -28,9 +28,10 @@
         background-color: transparent;
         padding: 1rem 2.5rem;
         border-radius: 1000px;
-        margin: 0 2rem 0 0;
+        margin: 0 0 0 0;
+        width: max-content;
         &:hover {
-          background-color: rgba(71, 99, 240, 0.15);
+          background-color: var(--bg-main-2);
           color: #dab539;
         }
       }
@@ -56,5 +57,18 @@
     justify-content: center;
     align-items: center;
     width: 12%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .market-page .MarketPageButtons {
+    flex-direction: column;
+    align-items: flex-start;
+    .MarketbtnRight {
+      width: 100%;
+      margin: 1.5rem 0 0 0;
+      select {
+        width: 100%;
+      }
+    }
   }
 }

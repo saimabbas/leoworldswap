@@ -1,0 +1,26 @@
+.light-theme {
+  --bg-main: #f7f8f9;
+  --bg-main-2: #fff;
+  --fff-000: #191d31;
+  --white10P-black10P: rgba(0, 0, 0, 0.025);
+  --border-color-1: rgba(0, 0, 0, 0.1);
+  .lt-element {
+    display: block;
+  }
+  .dt-element {
+    display: none;
+  }
+}
+.dark-theme {
+  --bg-main: #191d31;
+  --bg-main-2: #1f2335;
+  --fff-000: #fff;
+  --white10P-black10P: rgba(255, 255, 255, 0.1);
+  --border-color-1: #2b2e41;
+  .lt-element {
+    display: none;
+  }
+  .dt-element {
+    display: block;
+  }
+}

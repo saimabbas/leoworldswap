@@ -1,7 +1,7 @@
 header {
   width: calc(100% - 22.5rem);
   height: 7.5rem;
-  background-color: #1f2335;
+  background-color: var(--bg-main-2);
   //   background-color: green;
   position: fixed;
   top: 0;
@@ -13,17 +13,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .header-left-search-box {
-      min-width: 45rem;
+      min-width: 35rem;
       display: flex;
       align-items: center;
       justify-content: flex-start;
       padding: 1rem;
       border-radius: 0.75rem;
-      background-color: #191d31;
+      background-color: var(--bg-main);
       &:focus-within {
         svg {
-          stroke: #fff;
+          stroke: var(--fff-000);
         }
       }
       svg {
@@ -36,7 +37,7 @@ header {
       }
       input {
         width: 100%;
-        color: #fff;
+        color: var(--fff-000);
         background-color: transparent;
         &::placeholder {
           color: #a6a9b9;
@@ -72,7 +73,7 @@ header {
             justify-content: flex-start;
             h6 {
               font-size: 1.5rem;
-              color: #fff;
+              color: var(--fff-000);
               font-weight: 600;
               margin: 0 0.5rem 0 0;
             }
@@ -96,80 +97,154 @@ header {
         align-items: center;
         justify-content: flex-end;
         margin: 0 3.5rem 0 0;
-        .theme-toggle-box {
-          width: max-content;
-          padding: 0.5rem;
-          background-color: #191d31;
-          border-radius: 1rem;
-          display: grid;
-          grid-template-columns: max-content max-content;
-          grid-template-rows: auto;
-          grid-gap: 0.5rem;
-          .theme-icon-box {
-            width: 3.5rem;
-            height: 3.5rem;
-            border-radius: 0.75rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            svg {
-              width: 2.25rem;
-              object-fit: contain;
-              fill: #a6a9b9;
-              stroke: #a6a9b9;
-              transition: 0.25s;
-            }
-            &:hover {
-              svg {
-                fill: #fff;
-                stroke: #fff;
-              }
-            }
-          }
-          .theme-icon-box.active-theme {
-            background-color: #1f2335;
-            svg {
-              width: 2rem;
-              object-fit: contain;
-              fill: #fcac56;
-              stroke: #fcac56;
-            }
-          }
-        }
-        .spacer {
-          width: 1px;
-          height: 2.5rem;
-          margin: 0 2.5rem;
-          background-color: #2b2e41;
-        }
-        .notification-box {
-          width: max-content;
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          svg {
-            width: 2.25rem;
-            object-fit: contain;
-            cursor: pointer;
-            stroke: #a6a9b9;
-            transition: $trns1;
-          }
-          div {
-            width: 1rem;
-            height: 1rem;
-            border-radius: 50%;
-            background-color: #f9857a;
-            position: absolute;
-            top: -0.5rem;
-            right: -0.5rem;
-          }
-          &:hover svg {
-            stroke: #fff;
-          }
-        }
       }
     }
+  }
+}
+.search-icon-box {
+  width: max-content;
+  display: none;
+  margin: 0 1.5rem 0 0;
+  svg {
+    min-width: 2.25rem;
+    max-width: 2.25rem;
+    object-fit: contain;
+    margin: 0 1rem 0 0;
+    stroke: #a6a9b9;
+    transition: $trns1;
+  }
+}
+.spacer {
+  width: 1px;
+  height: 2.5rem;
+  margin: 0 2.5rem;
+  background-color: var(--border-color-1);
+}
+.notification-box {
+  width: max-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: 2.25rem;
+    object-fit: contain;
+    cursor: pointer;
+    stroke: #a6a9b9;
+    transition: $trns1;
+  }
+  div {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #f9857a;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+  }
+  &:hover svg {
+    stroke: var(--fff-000);
+  }
+}
+.theme-toggle-box {
+  width: max-content;
+  padding: 0.5rem;
+  background-color: var(--bg-main);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: auto;
+  grid-gap: 0.5rem;
+  .theme-icon-box {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+      width: 2.25rem;
+      object-fit: contain;
+      fill: #a6a9b9;
+      stroke: #a6a9b9;
+      transition: 0.25s;
+    }
+    &:hover {
+      svg {
+        fill: var(--fff-000);
+        stroke: var(--fff-000);
+      }
+    }
+  }
+  .theme-icon-box.active-theme {
+    background-color: var(--bg-main-2);
+    svg {
+      width: 2rem;
+      object-fit: contain;
+      fill: #fcac56;
+      stroke: #fcac56;
+    }
+  }
+}
+.header-mob {
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 6rem;
+  .header-mob-left {
+    img {
+      height: 3rem;
+      object-fit: contain;
+    }
+  }
+  .header-mob-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .header-content .header-left-search-box {
+    display: none;
+  }
+  .search-icon-box {
+    display: block;
+  }
+}
+@media screen and (max-width: 750px) {
+  header {
+    width: 100%;
+    height: unset;
+    background-color: var(--bg-main-2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    .header-content {
+      display: none;
+    }
+  }
+  .search-icon-box {
+    margin: 0 1.5rem;
+  }
+  .theme-toggle-box {
+    padding: 0;
+    grid-gap: 0;
+    background-color: unset;
+  }
+  .theme-toggle-box .theme-icon-box.active-theme {
+    background-color: var(--bg-main);
+  }
+  .notification-box div {
+    width: 0.75rem;
+    height: 0.75rem;
+    top: -0.25rem;
+    right: -0.25rem;
+  }
+  .header-mob {
+    display: flex;
   }
 }

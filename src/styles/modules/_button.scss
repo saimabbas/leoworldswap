@@ -15,10 +15,10 @@
   cursor: pointer;
   transition: $trns1;
   &:hover {
-    background-color: rgba(255, 210, 63, 0.85);
+    background-color: rgba(255, 210, 63, 0.9);
   }
   &:active {
-    background-color: rgba(255, 210, 63, 0.9);
+    background-color: rgba(255, 210, 63, 0.75);
   }
   svg {
     width: 1.75rem;

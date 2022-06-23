@@ -28,6 +28,256 @@ const Links = () => {
       <Link to="/setting">
         8. <span>Setting</span>
       </Link>
+      {/* <div className="assets-main-table">
+        <div className="lws-table">
+          <table className="assets-table-content">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Desktop Version</th>
+                <th>Mobile Version</th>
+                <th>Remaining Components</th>
+                <th>Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="table-border-box">
+                <td>1</td>
+                <td>
+                  <div className="td-name">
+                    <h6>Loading Screen</h6>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+                <td>
+                  {" "}
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+              </tr>
+              <tr className="table-border-box">
+                <td>2</td>
+                <td>
+                  <div className="td-name">
+                    <h6>Sign In</h6>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+                <td>
+                  {" "}
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+              </tr>
+              <tr className="table-border-box">
+                <td>3</td>
+                <td>
+                  <div className="td-name">
+                    <h6>Assets</h6>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+                <td>
+                  {" "}
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+              </tr>
+              <tr className="table-border-box">
+                <td>4</td>
+                <td>
+                  <div className="td-name">
+                    <h6>Deposit</h6>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+                <td>
+                  {" "}
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+              </tr>
+              <tr className="table-border-box">
+                <td>5</td>
+                <td>
+                  <div className="td-name">
+                    <h6>Detail</h6>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+                <td>
+                  {" "}
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+              </tr>
+              <tr className="table-border-box">
+                <td>6</td>
+                <td>
+                  <div className="td-name">
+                    <h6>Liquidity</h6>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+                <td>
+                  {" "}
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+              </tr>
+              <tr className="table-border-box">
+                <td>7</td>
+                <td>
+                  <div className="td-name">
+                    <h6>Market</h6>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+                <td>
+                  {" "}
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+              </tr>
+              <tr className="table-border-box">
+                <td>8</td>
+                <td>
+                  <div className="td-name">
+                    <h6>Setting</h6>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>Pending</p>
+                  </div>
+                </td>
+                <td>
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+                <td>
+                  {" "}
+                  <div className="white-td">
+                    <p>-</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> */}
     </div>
   );
 };
