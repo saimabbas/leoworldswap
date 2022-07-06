@@ -31,10 +31,14 @@
         margin: 0 0 0 1.5rem;
       }
     }
+    .assets-total-box {
+      width: 35rem;
+      height: 35rem;
+    }
   }
   .assets-exc-bal-box {
     display: grid;
-    grid-template-columns: 1fr 25rem;
+    grid-template-columns: 1fr 30rem;
     grid-template-rows: auto;
     grid-gap: 2.5rem;
     width: 100%;
@@ -331,7 +335,7 @@
       background-color: var(--bg-main-2);
       min-width: 2.25rem;
       z-index: 10; */
-      padding: 1.5rem 1.5rem 1.5rem 0;
+      padding: 1.5rem;
     }
     td:nth-child(2) {
       position: sticky;

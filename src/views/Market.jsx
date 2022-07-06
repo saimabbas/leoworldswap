@@ -16,6 +16,8 @@ import SunIcon from "../assets/Icons/SunIcon";
 import UserProfileImg from "../assets/Img/user-profile.png";
 import HeaderLogo from "../assets/Img/header-logo.png";
 import HeaderLogoDark from "../assets/Img/header-logo-dark.png";
+import LoadingLogo from "../assets/Img/LoadingLogo.png";
+import { Dropdown } from "react-bootstrap";
 const Market = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
   const changeToLightTheme = () => {
@@ -81,11 +83,29 @@ const Market = () => {
                 </div>
                 <ChevronDownIcon color="var(--fff-000)" />
               </div>
+              <Dropdown>
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  Dropdown Button
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    Another action
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">
+                    Something else
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
           <div className="header-mob">
             <div className="header-mob-left">
-              <img className="dt-element" src={HeaderLogo} alt="HeaderLogo" />
+              <div className="lws-logo">
+                <img src={LoadingLogo} alt="Logo" />
+                <span>LeoWorldSwap</span>
+              </div>
               <img
                 className="lt-element"
                 src={HeaderLogoDark}
@@ -123,21 +143,21 @@ const Market = () => {
         <Nav />
         <div className="dashboard-content-container">
           <div className="market-page">
-            <h5>Today Top Market</h5>
+            <h5>Cryptocurrencies</h5>
             <div className="MarketPageButtons">
               <div className="MarkerbtnLeft">
                 <a href="#">Gainers</a>
                 <a href="#">Lossers</a>
                 <a href="#">24h Vol</a>
               </div>
-              <div className="MarketbtnRight">
+              {/* <div className="MarketbtnRight">
                 <select name="market" id="market">
                   <option value="all">All Market</option>
                   <option value="saab">Saab</option>
                   <option value="mercedes">Mercedes</option>
                   <option value="audi">Audi</option>
                 </select>
-              </div>
+              </div> */}
             </div>
             <div className="assets-main-table">
               <div className="lws-table">

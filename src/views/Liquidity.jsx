@@ -12,6 +12,7 @@ import SunIcon from "../assets/Icons/SunIcon";
 import UserProfileImg from "../assets/Img/user-profile.png";
 import HeaderLogo from "../assets/Img/header-logo.png";
 import HeaderLogoDark from "../assets/Img/header-logo-dark.png";
+import LoadingLogo from "../assets/Img/LoadingLogo.png";
 
 const Liquidity = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
@@ -82,7 +83,10 @@ const Liquidity = () => {
           </div>
           <div className="header-mob">
             <div className="header-mob-left">
-              <img className="dt-element" src={HeaderLogo} alt="HeaderLogo" />
+              <div className="lws-logo">
+                <img src={LoadingLogo} alt="Logo" />
+                <span>LeoWorldSwap</span>
+              </div>
               <img
                 className="lt-element"
                 src={HeaderLogoDark}

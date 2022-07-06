@@ -8,6 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 5rem;
   .sign-in-content {
     display: flex;
@@ -20,16 +21,26 @@
     background-color: var(--bg-main-2);
     img {
       width: 7.5rem;
-      margin: 0 0 2.5rem 0;
       object-fit: contain;
     }
     h3 {
       font-size: 2.6rem;
       color: var(--fff-000);
       font-weight: 500;
-      margin: 0 0 4rem 0;
+      margin: 1.5rem 0 3.5rem 0;
       width: 100%;
       text-align: center;
+    }
+    .signup-grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-gap: 1.5rem;
+      margin: 0 0 2.5rem 0;
+      input {
+        width: 100%;
+      }
     }
     .sign-in-flabel {
       display: flex;
@@ -37,25 +48,44 @@
       align-items: flex-start;
       flex-direction: column;
       width: 100%;
-      input {
-        background-color: #191b20;
-        border-radius: 12px;
-        border: 2px solid transparent;
-        padding: 2rem;
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--fff-000);
-        margin: 0 0 2rem 0;
-        width: 100%;
-        &::placeholder {
-          font-size: 1.25rem;
-          color: #808191;
-          font-weight: 700;
-        }
-        &:focus {
-          border: 2px solid #dab539;
-          background-color: #242731;
-        }
+    }
+    .signup-grid input {
+      background-color: #191b20;
+      border-radius: 12px;
+      border: 2px solid transparent;
+      padding: 2rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--fff-000);
+      width: 100%;
+      &::placeholder {
+        font-size: 1.25rem;
+        color: #808191;
+        font-weight: 700;
+      }
+      &:focus {
+        border: 2px solid #dab539;
+        background-color: #242731;
+      }
+    }
+    .sign-in-flabel input {
+      background-color: #191b20;
+      border-radius: 12px;
+      border: 2px solid transparent;
+      padding: 2rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--fff-000);
+      margin: 0 0 2rem 0;
+      width: 100%;
+      &::placeholder {
+        font-size: 1.25rem;
+        color: #808191;
+        font-weight: 700;
+      }
+      &:focus {
+        border: 2px solid #dab539;
+        background-color: #242731;
       }
     }
     .sign-in-link {
@@ -79,13 +109,14 @@
     .btn-filled-yellow {
       width: 100%;
       padding: 1rem;
-      margin: 2.5rem 0;
+      margin: 0 0 2.5rem 0;
     }
     .sign-in-last {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
+      margin: 0 0 3.5rem 0;
       p {
         font-size: 1.3rem;
         color: var(--fff-000);

@@ -18,6 +18,55 @@ import SunIcon from "../assets/Icons/SunIcon";
 import UserProfileImg from "../assets/Img/user-profile.png";
 import HeaderLogo from "../assets/Img/header-logo.png";
 import HeaderLogoDark from "../assets/Img/header-logo-dark.png";
+import LoadingLogo from "../assets/Img/LoadingLogo.png";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+export const options = {
+  responsive: true,
+};
+
+const labels = ["January", "February", "March", "April", "May", "June"];
+
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: "Q1",
+      data: [
+        [0, 3],
+        [1, 1],
+        [2, 5],
+        [3, 6],
+        [4, 4],
+        [1, 3],
+      ],
+      borderColor: "#dab539",
+      backgroundColor: "#dab539",
+      color: "var(--fff-000)",
+    },
+  ],
+};
+
 const Assets = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
   const changeToLightTheme = () => {
@@ -87,7 +136,10 @@ const Assets = () => {
           </div>
           <div className="header-mob">
             <div className="header-mob-left">
-              <img className="dt-element" src={HeaderLogo} alt="HeaderLogo" />
+              <div className="lws-logo">
+                <img src={LoadingLogo} alt="Logo" />
+                <span>LeoWorldSwap</span>
+              </div>
               <img
                 className="lt-element"
                 src={HeaderLogoDark}
@@ -130,35 +182,38 @@ const Assets = () => {
                 <span>Total Balance</span>
                 <h6>$372,825.32 USD</h6>
               </div>
-              <div className="assets-tot-btn">
+              {/* <div className="assets-tot-btn">
                 <button className="btn-filled-yellow">
-                  <ExportIcon color="#fff" /> Withdraw
+                  <ExportIcon color="#fff" /> Send
                 </button>
                 <button className="btn-outlined-gray-icon">
-                  <ImportIcon color="#A6A9B9" /> Deposit
+                  <ImportIcon color="#A6A9B9" /> Receive
                 </button>
-              </div>
+              </div> */}
+              {/* <div className="assets-graph-box">
+                <Line options={options} data={data} />
+              </div> */}
             </div>
             <div className="assets-exc-bal-box">
               <div className="a-exc-bal-left">
                 <div className="a-exc-box">
-                  <div className="assets-orange"></div>
+                  <div className="assets-blue"></div>
                   <div className="a-exc-para">
-                    <span>Exchange Balance</span>
+                    <span>Top Performer</span>
                     <h6>0.23843481 BTC</h6>
                     <p>$243,325,231.032</p>
                   </div>
                 </div>
                 <div className="a-exc-box">
-                  <div className="assets-blue"></div>
+                  <div className="assets-orange"></div>
                   <div className="a-exc-para">
-                    <span>Asset Balance</span>
+                    <span>Worst Performer</span>
                     <h6>0.3283235 BTC</h6>
                     <p>$124,572,231.032</p>
                   </div>
                 </div>
               </div>
-              <div className="a-exc-bal-right">
+              {/* <div className="a-exc-bal-right">
                 <div className="a-exc-right-top">
                   <div className="a-right-top-para">
                     <span>Balance Exchanged</span>
@@ -177,7 +232,7 @@ const Assets = () => {
                     <div className="b-inner-l"></div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="assets-table">

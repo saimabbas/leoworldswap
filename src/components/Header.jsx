@@ -6,6 +6,7 @@ import SearchIcon from "../assets/Icons/SearchIcon";
 import SunIcon from "../assets/Icons/SunIcon";
 import UserProfileImg from "../assets/Img/user-profile.png";
 import HeaderLogo from "../assets/Img/header-logo.png";
+import LoadingLogo from "../assets/Img/LoadingLogo.png";
 const Header = (props) => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
   const changeToLightTheme = () => {
@@ -70,7 +71,10 @@ const Header = (props) => {
       </div>
       <div className="header-mob">
         <div className="header-mob-left">
-          <img src={HeaderLogo} alt="HeaderLogo" />
+          <div className="lws-logo">
+            <img src={LoadingLogo} alt="Logo" />
+            <span>LeoWorldSwap</span>
+          </div>
         </div>
         <div className="header-mob-right">
           <div className="theme-toggle-box">

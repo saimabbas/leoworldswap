@@ -17,6 +17,10 @@ body {
   background-color: var(--bg-main);
 }
 
+p {
+  margin: 0;
+}
+
 .app {
   background-color: var(--bg-main);
   width: 100%;
@@ -92,7 +96,6 @@ svg {
 .lws-table {
   width: 100%;
   max-width: 100%;
-  overflow-x: auto;
   position: relative;
 }
 .lws-table table {
@@ -102,6 +105,46 @@ svg {
   min-width: -moz-max-content;
   min-width: max-content;
   transform: translateZ(0px);
+}
+
+.lws-table tbody tr {
+  transition: 0.5s;
+  position: relative;
+  z-index: 100 !important;
+  background-color: var(--bg-main-2);
+  width: 100%;
+  cursor: pointer;
+}
+
+.lws-table tbody tr:hover {
+  transform: scale(1.05);
+  border-radius: 1000px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
+  z-index: 200 !important;
+}
+
+.lws-table tbody tr:hover img {
+  transform: rotateX(360deg);
+  transition: 1s;
+}
+
+.lws-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.lws-logo img {
+  width: 3.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.lws-logo span {
+  font-size: 1.65rem;
+  margin: 0 0 0 0.75rem;
+  color: var(--fff-000);
 }
 
 @media screen and (max-width: 750px) {
@@ -317,9 +360,10 @@ header .header-content .header-left-search-box {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 0.75rem;
   background-color: var(--bg-main);
+  margin: 0 2.5rem 0 0;
 }
 header .header-content .header-left-search-box:focus-within svg {
   stroke: var(--fff-000);
@@ -601,13 +645,6 @@ nav .nav-content .nav-top {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-nav .nav-content .nav-top img {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 nav .nav-content .nav-center {
   width: 100%;
@@ -1477,9 +1514,13 @@ nav .nav-content .nav-bottom .help-center-box button {
 .assets-page .assets-total-box .assets-tot-btn button {
   margin: 0 0 0 1.5rem;
 }
+.assets-page .assets-total-box .assets-total-box {
+  width: 35rem;
+  height: 35rem;
+}
 .assets-page .assets-exc-bal-box {
   display: grid;
-  grid-template-columns: 1fr 25rem;
+  grid-template-columns: 1fr 30rem;
   grid-template-rows: auto;
   grid-gap: 2.5rem;
   width: 100%;
@@ -1775,7 +1816,7 @@ nav .nav-content .nav-bottom .help-center-box button {
   background-color: var(--bg-main-2);
   min-width: 2.25rem;
   z-index: 10; */
-  padding: 1.5rem 1.5rem 1.5rem 0;
+  padding: 1.5rem;
 }
 .assets-table-content .table-border-box td:nth-child(2) {
   position: -webkit-sticky;
@@ -2238,6 +2279,14 @@ nav .nav-content .nav-bottom .help-center-box button {
   background-color: var(--bg-main-2);
   width: 100%;
 }
+.detail-page .detail-bottom-box .detail-bottom-right .buttons-grid {
+  width: 100%;
+  margin: 0 0 2.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5rem;
+  grid-template-rows: auto;
+}
 .detail-page .detail-bottom-box .detail-bottom-right .dbright-price {
   display: flex;
   justify-content: flex-start;
@@ -2327,6 +2376,7 @@ nav .nav-content .nav-bottom .help-center-box button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 5rem;
 }
 .sign-inpage .sign-in-content {
@@ -2341,7 +2391,6 @@ nav .nav-content .nav-bottom .help-center-box button {
 }
 .sign-inpage .sign-in-content img {
   width: 7.5rem;
-  margin: 0 0 2.5rem 0;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -2349,9 +2398,20 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 2.6rem;
   color: var(--fff-000);
   font-weight: 500;
-  margin: 0 0 4rem 0;
+  margin: 1.5rem 0 3.5rem 0;
   width: 100%;
   text-align: center;
+}
+.sign-inpage .sign-in-content .signup-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  margin: 0 0 2.5rem 0;
+}
+.sign-inpage .sign-in-content .signup-grid input {
+  width: 100%;
 }
 .sign-inpage .sign-in-content .sign-in-flabel {
   display: flex;
@@ -2359,6 +2419,35 @@ nav .nav-content .nav-bottom .help-center-box button {
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
+}
+.sign-inpage .sign-in-content .signup-grid input {
+  background-color: #191b20;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--fff-000);
+  width: 100%;
+}
+.sign-inpage .sign-in-content .signup-grid input::-moz-placeholder {
+  font-size: 1.25rem;
+  color: #808191;
+  font-weight: 700;
+}
+.sign-inpage .sign-in-content .signup-grid input:-ms-input-placeholder {
+  font-size: 1.25rem;
+  color: #808191;
+  font-weight: 700;
+}
+.sign-inpage .sign-in-content .signup-grid input::placeholder {
+  font-size: 1.25rem;
+  color: #808191;
+  font-weight: 700;
+}
+.sign-inpage .sign-in-content .signup-grid input:focus {
+  border: 2px solid #dab539;
+  background-color: #242731;
 }
 .sign-inpage .sign-in-content .sign-in-flabel input {
   background-color: #191b20;
@@ -2411,13 +2500,14 @@ nav .nav-content .nav-bottom .help-center-box button {
 .sign-inpage .sign-in-content .btn-filled-yellow {
   width: 100%;
   padding: 1rem;
-  margin: 2.5rem 0;
+  margin: 0 0 2.5rem 0;
 }
 .sign-inpage .sign-in-content .sign-in-last {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 0 0 3.5rem 0;
 }
 .sign-inpage .sign-in-content .sign-in-last p {
   font-size: 1.3rem;

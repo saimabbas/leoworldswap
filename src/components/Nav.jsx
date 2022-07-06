@@ -8,6 +8,10 @@ import HeaderLogo from "../assets/Img/header-logo.png";
 import HeaderLogoDark from "../assets/Img/header-logo-dark.png";
 import ExportIcon from "../assets/Icons/ExportIcon";
 import UserProfileImg from "../assets/Img/user-profile.png";
+import LoadingLogo from "../assets/Img/LoadingLogo.png";
+import Liquidity from "../assets/Icons/Liquidity";
+import Transactions from "../assets/Icons/Transactions";
+import NFTIcon from "../assets/Icons/NFTIcon";
 
 const Nav = () => {
   return (
@@ -15,8 +19,12 @@ const Nav = () => {
       <div className="nav-content">
         <div className="nav-top-box">
           <div className="nav-top">
-            <img className="dt-element" src={HeaderLogo} alt="HeaderLogo" />
-            <img className="lt-element" src={HeaderLogoDark} alt="HeaderLogo" />
+            <div className="lws-logo">
+              <img src={LoadingLogo} alt="Logo" />
+              <span>LeoWorldSwap</span>
+            </div>
+            {/* <img className="dt-element" src={HeaderLogo} alt="HeaderLogo" /> */}
+            {/* <img className="lt-element" src={HeaderLogoDark} alt="HeaderLogo" /> */}
           </div>
           <div className="nav-center">
             <ul>
@@ -38,11 +46,29 @@ const Nav = () => {
                   <span>Exchange</span>
                 </a>
               </li>
+              <li>
+                <a href="#">
+                  <Liquidity color="#a6a9b9" />
+                  <span>Liquidity</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <Transactions color="#a6a9b9" />
+                  <span>Transactions</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <NFTIcon color="#a6a9b9" />
+                  <span>NFT</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
         <div className="nav-bottom">
-          <div className="help-center-box">
+          {/* <div className="help-center-box">
             <img src={HelpCenter} alt="HelpCenter" />
             <h6>Help Center</h6>
             <p>Having trouble in LeoXL? Please contact us for more question.</p>
@@ -50,7 +76,7 @@ const Nav = () => {
               {" "}
               <ExportIcon color="#fff" /> Help Center
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="nav-mob">

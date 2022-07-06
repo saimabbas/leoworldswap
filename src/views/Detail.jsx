@@ -22,6 +22,7 @@ import SunIcon from "../assets/Icons/SunIcon";
 import UserProfileImg from "../assets/Img/user-profile.png";
 import HeaderLogo from "../assets/Img/header-logo.png";
 import HeaderLogoDark from "../assets/Img/header-logo-dark.png";
+import LoadingLogo from "../assets/Img/LoadingLogo.png";
 
 ChartJS.register(
   CategoryScale,
@@ -128,7 +129,10 @@ const Detail = () => {
           </div>
           <div className="header-mob">
             <div className="header-mob-left">
-              <img className="dt-element" src={HeaderLogo} alt="HeaderLogo" />
+              <div className="lws-logo">
+                <img src={LoadingLogo} alt="Logo" />
+                <span>LeoWorldSwap</span>
+              </div>
               <img
                 className="lt-element"
                 src={HeaderLogoDark}
@@ -181,7 +185,7 @@ const Detail = () => {
               </div>
               <div className="detailgridcontent-box">
                 <div className="detailgridcontent">
-                  <span>Last Price</span>
+                  <span>Current Price</span>
                   <p>1,322.321 USD</p>
                 </div>
                 <div className="detailgridcontent">
@@ -189,15 +193,15 @@ const Detail = () => {
                   <p>+12,32%</p>
                 </div>
                 <div className="detailgridcontent">
-                  <span>24h High</span>
+                  <span>All Time High</span>
                   <p>0.0000332</p>
                 </div>
                 <div className="detailgridcontent">
-                  <span>24h Low</span>
+                  <span>All Time Low</span>
                   <p>0.0000332</p>
                 </div>
                 <div className="detailgridcontent">
-                  <span>Volume</span>
+                  <span>24h Volume</span>
                   <p>1,322.321 BTC</p>
                 </div>
               </div>
@@ -238,6 +242,10 @@ const Detail = () => {
                 </div>
               </div>
               <div className="detail-bottom-right lws-rounded-box">
+                <div className="buttons-grid">
+                  <button className="btn-filled-yellow">Buy</button>
+                  <button className="btn-outlined-gray-icon">Swap</button>
+                </div>
                 <div className="dbright-price">
                   <p>Price</p>
                   <div className="dbright-para">

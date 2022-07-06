@@ -19,9 +19,10 @@ header {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      padding: 1rem;
+      padding: 1rem 2rem;
       border-radius: 0.75rem;
       background-color: var(--bg-main);
+      margin: 0 2.5rem 0 0;
       &:focus-within {
         svg {
           stroke: var(--fff-000);

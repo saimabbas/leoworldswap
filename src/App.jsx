@@ -1,8 +1,10 @@
 import AppPage from "./views/Loading";
+// import "bootstrap/dist/css/bootstrap.css";
 import "./styles/main.css";
 import { BrowserRouter as Switch, Routes, Route } from "react-router-dom";
 import Loading from "./views/Loading";
 import SignIn from "./views/SignIn";
+import SignUp from "./views/SignUp";
 import Links from "./views/Links";
 import Assets from "./views/Assets";
 import Deposit from "./views/Deposit";
@@ -25,6 +27,7 @@ function App() {
           <Route path="/liquidity" element={<Liquidity />} />
           <Route path="/market" element={<Market />} />
           <Route path="/setting" element={<Setting />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </Switch>
     </>

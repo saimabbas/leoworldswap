@@ -20,6 +20,7 @@ import SunIcon from "../assets/Icons/SunIcon";
 import UserProfileImg from "../assets/Img/user-profile.png";
 import HeaderLogo from "../assets/Img/header-logo.png";
 import HeaderLogoDark from "../assets/Img/header-logo-dark.png";
+import LoadingLogo from "../assets/Img/LoadingLogo.png";
 const Deposit = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
   const changeToLightTheme = () => {
@@ -89,7 +90,10 @@ const Deposit = () => {
           </div>
           <div className="header-mob">
             <div className="header-mob-left">
-              <img className="dt-element" src={HeaderLogo} alt="HeaderLogo" />
+              <div className="lws-logo">
+                <img src={LoadingLogo} alt="Logo" />
+                <span>LeoWorldSwap</span>
+              </div>
               <img
                 className="lt-element"
                 src={HeaderLogoDark}
@@ -127,7 +131,7 @@ const Deposit = () => {
         <Nav />
         <div className="dashboard-content-container">
           <div className="deposit-page">
-            <h5>Deposit</h5>
+            {/* <h5>Deposit</h5>
             <div className="Deposit-main-box lws-rounded-box">
               <div className="dmainleft">
                 <label htmlFor="Assets">Asset Name</label>
@@ -210,7 +214,7 @@ const Deposit = () => {
                   confirm the qr code payment
                 </p>
               </div>
-            </div>
+            </div> */}
             <div className="DepositHistoryTable">
               <div className="DHTabbox">
                 <h6>Deposit History</h6>
@@ -227,11 +231,11 @@ const Deposit = () => {
                         <th>#</th>
                         <th>Name</th>
                         <th>Total Balance</th>
-                        <th>24h Chance</th>
-                        <th>7d Chance</th>
-                        <th>In Order</th>
-                        <th>Balance Available</th>
-                        <th>USD Value</th>
+                        <th>24h Change</th>
+                        <th>7d Change</th>
+                        <th>Purchase Order</th>
+                        <th>Current Price</th>
+                        <th>Value</th>
                       </tr>
                     </thead>
                     <tbody>
