@@ -40,6 +40,9 @@ header {
         width: 100%;
         color: var(--fff-000);
         background-color: transparent;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: normal;
         &::placeholder {
           color: #a6a9b9;
         }
@@ -77,11 +80,13 @@ header {
               color: var(--fff-000);
               font-weight: 600;
               margin: 0 0.5rem 0 0;
+              line-height: normal;
             }
             p {
               font-size: 1.35rem;
               font-weight: 400;
               color: #a6a9b9;
+              margin-bottom: 0;
             }
           }
         }

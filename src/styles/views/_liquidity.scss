@@ -5,6 +5,7 @@
   p {
     font-size: 1.5rem;
     color: #a6a9b9;
+    margin-bottom: 0;
   }
   .liquidity-msg-p {
     width: 100%;
@@ -27,6 +28,8 @@
       font-size: 2.75rem;
       color: var(--fff-000);
       font-weight: 600;
+      margin-bottom: 0;
+      line-height: normal;
     }
     .liquidity-header-icons {
       display: flex;

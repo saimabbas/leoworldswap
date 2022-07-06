@@ -19,6 +19,17 @@ body {
 p {
   margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  text-decoration: none !important;
+}
 .app {
   background-color: var(--bg-main);
   width: 100%;
@@ -37,6 +48,7 @@ select {
   border: 0;
   font-size: 1.5rem;
   font-weight: 400;
+  line-height: normal;
 }
 a {
   cursor: pointer;

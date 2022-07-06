@@ -21,6 +21,7 @@
         color: var(--fff-000);
         font-weight: 600;
         margin: 0.5rem 0 0 0;
+        line-height: normal;
       }
     }
     .assets-tot-btn {
@@ -81,17 +82,20 @@
             color: #a6a9b9;
             font-size: 1.4rem;
             font-weight: 400;
+            line-height: normal;
           }
           h6 {
             font-size: 2.25rem;
             color: var(--fff-000);
             font-weight: 600;
             margin: 0.25rem 0;
+            line-height: normal;
           }
           p {
             color: #26b194;
             font-size: 1.4rem;
             font-weight: 500;
+            margin-bottom: 0;
           }
         }
       }
@@ -162,6 +166,7 @@
     font-size: 2.5rem;
     color: var(--fff-000);
     font-weight: 600;
+    margin-bottom: 0;
   }
 }
 .assets-main-table {
@@ -301,11 +306,17 @@
           font-weight: 500;
           color: var(--fff-000);
           margin: 0 0 0 1.25rem;
+          line-height: normal;
           span {
             font-weight: 400;
             color: #a6a9b9;
             padding: 0 0 0 0.5rem;
           }
+        }
+      }
+      td {
+        p {
+          margin-bottom: 0;
         }
       }
       .white-td {

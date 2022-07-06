@@ -1,5 +1,5 @@
 import AppPage from "./views/Loading";
-// import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css";
 import "./styles/main.css";
 import { BrowserRouter as Switch, Routes, Route } from "react-router-dom";
 import Loading from "./views/Loading";

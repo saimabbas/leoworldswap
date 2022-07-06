@@ -53,12 +53,14 @@
           font-size: 2.4rem;
           color: var(--fff-000);
           font-weight: 600;
+          line-height: normal;
         }
         h6 {
           font-size: 1.6rem;
           color: #a6a9b9;
           font-weight: 400;
           margin: 0.25rem 0 0 0 !important;
+          line-height: normal;
         }
       }
       .dgdrop-icon {
@@ -87,6 +89,7 @@
         font-weight: 500;
         font-size: 1.4rem;
         margin: 0.25rem 0 0 0 !important;
+        margin-bottom: 0;
       }
     }
   }
@@ -147,11 +150,13 @@
           color: var(--fff-000);
           font-weight: 600;
           margin: 0 0 2.5rem 0 !important;
+          line-height: normal;
         }
         p {
           font-size: 1.4rem;
           color: #a6a9b9;
           font-weight: 400;
+          margin-bottom: 0;
         }
       }
     }
@@ -195,6 +200,7 @@
             font-size: 1.4rem;
             color: var(--fff-000);
             font-weight: 400;
+            margin-bottom: 0;
           }
         }
       }

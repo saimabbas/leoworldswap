@@ -30,6 +30,7 @@
       margin: 1.5rem 0 3.5rem 0;
       width: 100%;
       text-align: center;
+      line-height: normal;
     }
     .signup-grid {
       width: 100%;
@@ -78,6 +79,7 @@
       color: var(--fff-000);
       margin: 0 0 2rem 0;
       width: 100%;
+      line-height: normal;
       &::placeholder {
         font-size: 1.25rem;
         color: #808191;
@@ -110,6 +112,7 @@
       width: 100%;
       padding: 1rem;
       margin: 0 0 2.5rem 0;
+      line-height: normal;
     }
     .sign-in-last {
       display: flex;
@@ -121,6 +124,7 @@
         font-size: 1.3rem;
         color: var(--fff-000);
         font-weight: 600;
+        margin: 0 !important;
       }
       .sign-in-link {
         display: flex;
