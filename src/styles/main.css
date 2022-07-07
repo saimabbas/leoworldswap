@@ -1464,6 +1464,8 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 2.75rem;
   color: var(--fff-000);
   font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
 }
 
 .setting-page .setting-cross {
@@ -1529,6 +1531,7 @@ nav .nav-content .nav-bottom .help-center-box button {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  line-height: normal;
 }
 
 .setting-main-box {
@@ -1562,6 +1565,8 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.8rem;
   color: var(--fff-000);
   font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
 }
 
 .setting-main-box .setting-left .sleft-fa .google-authentication {
@@ -1635,6 +1640,7 @@ nav .nav-content .nav-bottom .help-center-box button {
   color: var(--fff-000);
   font-weight: 500;
   margin: 0 0 0.5rem 0;
+  line-height: normal;
 }
 
 .setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-left .goog-para p {
@@ -1643,6 +1649,7 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-weight: 400;
   line-height: 25.2px;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .setting-main-box .setting-left .sleft-fa .google-authentication .goog-auth-right {
@@ -1727,6 +1734,7 @@ nav .nav-content .nav-bottom .help-center-box button {
   color: var(--fff-000);
   font-weight: 500;
   margin: 0 0 0.5rem 0;
+  line-height: normal;
 }
 
 .setting-main-box .setting-left .sleft-fa .email-authentication .goog-auth-left .goog-para p {
@@ -1734,6 +1742,7 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 25.2px;
+  margin-bottom: 0;
   width: 75%;
 }
 
@@ -1766,6 +1775,8 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.8rem;
   color: var(--fff-000);
   font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
 }
 
 .setting-main-box .setting-left .sleft-aa {
@@ -1801,6 +1812,8 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.8rem;
   color: var(--fff-000);
   font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
 }
 
 .setting-main-box .setting-left .sleft-aa .sl-aa-para p {
@@ -1808,12 +1821,15 @@ nav .nav-content .nav-bottom .help-center-box button {
   color: #a6a9b9;
   font-weight: 400;
   margin: 1rem 0;
+  margin-bottom: 0;
 }
 
 .setting-main-box .setting-left .sleft-aa .sl-aa-para h6 {
   font-size: 1.4rem;
   color: var(--fff-000);
   font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
 }
 
 .setting-main-box .setting-left .sleft-aa .sl-aa-para h6 span {
@@ -1821,6 +1837,7 @@ nav .nav-content .nav-bottom .help-center-box button {
   margin: 0 0 0 0.5rem;
   text-decoration: underline;
   cursor: pointer;
+  line-height: normal;
 }
 
 .setting-main-box .setting-right {
@@ -1857,6 +1874,8 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.8rem;
   color: var(--fff-000);
   font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
 }
 
 .setting-main-box .setting-right .sright-ILA .s-right-Iden-2 {
@@ -1878,6 +1897,8 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.8rem;
   color: var(--fff-000);
   font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
 }
 
 .setting-main-box .setting-right .sright-ILA .s-right-Iden-1 {
@@ -1919,6 +1940,8 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.8rem;
   color: var(--fff-000);
   font-weight: 600;
+  margin-bottom: 0;
+  line-height: normal;
 }
 
 .setting-main-box .setting-right .sright-ILA .s-right-Iden-1 .s-right-para p {
@@ -1945,6 +1968,7 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.4rem;
   color: var(--fff-000);
   font-weight: 500;
+  line-height: normal;
 }
 
 .setting-main-box .setting-right .sright-ILA .s-right-Iden-1 .s-right-para .s-right-off img {
@@ -1996,6 +2020,8 @@ nav .nav-content .nav-bottom .help-center-box button {
   font-size: 1.8rem;
   color: var(--fff-000);
   font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0;
 }
 
 .setting-main-box .setting-right .sright-apc .s-right-Iden-3 .s-right-para p {
