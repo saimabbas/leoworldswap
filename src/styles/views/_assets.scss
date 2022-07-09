@@ -39,13 +39,13 @@
   }
   .assets-exc-bal-box {
     display: grid;
-    grid-template-columns: 1fr 30rem;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 2.5rem;
     width: 100%;
     .a-exc-bal-left {
       display: grid;
-      grid-template-columns: max-content max-content;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
       grid-gap: 2.5rem;
       width: 100%;
@@ -356,7 +356,16 @@
     }
   }
 }
+.assets-top-stats-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}
 @media screen and (max-width: 1150px) {
+  .assets-top-stats-box {
+    grid-template-columns: 1fr;
+  }
   .assets-page .assets-exc-bal-box {
     grid-template-columns: 1fr;
     grid-gap: 2.5rem;

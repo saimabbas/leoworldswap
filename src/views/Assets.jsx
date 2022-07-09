@@ -177,12 +177,14 @@ const Assets = () => {
         <Nav />
         <div className="dashboard-content-container">
           <div className="assets-page lws-rounded-box">
-            <div className="assets-total-box">
-              <div className="assets-tot-left">
-                <span>Total Balance</span>
-                <h6>$372,825.32 USD</h6>
-              </div>
-              {/* <div className="assets-tot-btn">
+            <div className="assets-top-stats-box">
+              <div className="assets-top-stats-box-left">
+                <div className="assets-total-box">
+                  <div className="assets-tot-left">
+                    <span>Total Balance</span>
+                    <h6>$372,825.32 USD</h6>
+                  </div>
+                  {/* <div className="assets-tot-btn">
                 <button className="btn-filled-yellow">
                   <ExportIcon color="#fff" /> Send
                 </button>
@@ -190,30 +192,30 @@ const Assets = () => {
                   <ImportIcon color="#A6A9B9" /> Receive
                 </button>
               </div> */}
-              {/* <div className="assets-graph-box">
+                  {/* <div className="assets-graph-box">
                 <Line options={options} data={data} />
               </div> */}
-            </div>
-            <div className="assets-exc-bal-box">
-              <div className="a-exc-bal-left">
-                <div className="a-exc-box">
-                  <div className="assets-blue"></div>
-                  <div className="a-exc-para">
-                    <span>Top Performer</span>
-                    <h6>0.23843481 BTC</h6>
-                    <p>$243,325,231.032</p>
-                  </div>
                 </div>
-                <div className="a-exc-box">
-                  <div className="assets-orange"></div>
-                  <div className="a-exc-para">
-                    <span>Worst Performer</span>
-                    <h6>0.3283235 BTC</h6>
-                    <p>$124,572,231.032</p>
+                <div className="assets-exc-bal-box">
+                  <div className="a-exc-bal-left">
+                    <div className="a-exc-box">
+                      <div className="assets-blue"></div>
+                      <div className="a-exc-para">
+                        <span>Top Performer</span>
+                        <h6>0.23843481 BTC</h6>
+                        <p>$243,325,231.032</p>
+                      </div>
+                    </div>
+                    <div className="a-exc-box">
+                      <div className="assets-orange"></div>
+                      <div className="a-exc-para">
+                        <span>Worst Performer</span>
+                        <h6>0.3283235 BTC</h6>
+                        <p>$124,572,231.032</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              {/* <div className="a-exc-bal-right">
+                  {/* <div className="a-exc-bal-right">
                 <div className="a-exc-right-top">
                   <div className="a-right-top-para">
                     <span>Balance Exchanged</span>
@@ -233,6 +235,11 @@ const Assets = () => {
                   </div>
                 </div>
               </div> */}
+                </div>
+              </div>
+              <div className="assets-top-stats-box-right">
+                <Line options={options} data={data} />
+              </div>
             </div>
           </div>
           <div className="assets-table">
